@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+</head>
+<body>
+{% for id, name in recipe_list.items %}
+    <p>{{ id }}: {{ name }}</p>
+{% empty %}
+    <p>Dont know this recipe :(</p>
+{% endfor %}
+</body>
+</html>
